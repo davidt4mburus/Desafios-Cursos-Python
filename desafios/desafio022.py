@@ -1,0 +1,5 @@
+nome_completo = input('Digite seu nome completo: ')
+print(nome_completo.upper())
+print(nome_completo.lower())
+print(len(nome_completo.replace(' ', '')))
+print(len(nome_completo.split()[0]))
