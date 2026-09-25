@@ -16,21 +16,23 @@ class Poligono:
 class Quadrado(Poligono):
     def __init__(self, lados):
         super().__init__(lados)
-        pass
+        self.qnt_lados = lados
+        self.lado = 4
 
     def perimetro(self):
-        pass
+        return self.qnt_lados * self.lado
 
     def area(self):
-        pass
+        return self.qnt_lados * self.qnt_lados
+    
 
 class Circulo(Poligono):
     def __init__(self, lados):
         super().__init__(lados)
-        pass
+        self.pi = 3.1416
 
     def perimetro(self):
-        pass
+        return (self.pi * 2) * self.qnt_lados
 
     def area(self):
-        pass
+        return self.pi * (self.qnt_lados * self.qnt_lados)
